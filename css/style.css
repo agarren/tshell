@@ -12,7 +12,8 @@ html{
   width: 960px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 #main_pic {
   width: 100%;
@@ -22,7 +23,6 @@ html{
   overflow:hidden;
 }
 .top_bar{
-  position: absolute;
   background: cadetblue;
   width: 100%;
   display: flex;
@@ -73,7 +73,7 @@ html{
 }
 .services{
   position: relative;
-  top: 31rem;
+  top: 25rem;
   height: 14rem;
   margin: 3rem 3rem;
   width: 100%;
@@ -101,4 +101,34 @@ html{
   font-size: 1rem;
   height: 4rem;
   vertical-align: bottom;
+}
+.about_us{
+  position: relative;
+  top: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about_item{
+  display: flex;
+  flex-direction: column;
+  margin: auto 5%;
+}
+.about_title{
+  background-color: cadetblue;
+  margin: 1rem auto;
+}
+.about_title p{
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  margin: .5rem 1.25rem;
+}
+.about_text p{
+  font-family: helvetica;
+  font-size: 1rem;
+  text-align: left;
 }
