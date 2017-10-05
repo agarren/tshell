@@ -1,0 +1,53 @@
+Last login: Wed Oct  4 11:43:52 on ttys000
+APL9G3QPB719AE:~ agarr9$ cd Documents/Project/tshell
+APL9G3QPB719AE:tshell agarr9$ ls
+css		images		index.html
+APL9G3QPB719AE:tshell agarr9$ git add .
+APL9G3QPB719AE:tshell agarr9$ git push origin master
+Everything up-to-date
+APL9G3QPB719AE:tshell agarr9$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   css/style.css
+	modified:   index.html
+
+APL9G3QPB719AE:tshell agarr9$ git commit -m "new elements"
+[master 431eb77] new elements
+ 2 files changed, 51 insertions(+), 6 deletions(-)
+APL9G3QPB719AE:tshell agarr9$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 888 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/agarren/tshell.git
+   8b0de3b..431eb77  master -> master
+APL9G3QPB719AE:tshell agarr9$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   css/style.css
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+APL9G3QPB719AE:tshell agarr9$ git add .
+APL9G3QPB719AE:tshell agarr9$ git commit -m "further down the page"
+[master d70ff83] further down the page
+ 2 files changed, 54 insertions(+), 5 deletions(-)
+APL9G3QPB719AE:tshell agarr9$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.03 KiB | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/agarren/tshell.git
+   431eb77..d70ff83  master -> master
+APL9G3QPB719AE:tshell agarr9$ 
